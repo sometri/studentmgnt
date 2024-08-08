@@ -1,0 +1,12 @@
+php artisan commands:
+-------------
+php artisan list: Lists all available Artisan commands.
+php artisan help [command]: Displays help for a specific command.
+php artisan migrate: Runs the database migrations.
+php artisan migrate:rollback: Rolls back the last database migration.
+php artisan db:seed: Seeds the database with test data.
+php artisan make:model [ModelName]: Creates a new Eloquent model.
+php artisan make:controller [ControllerName]: Creates a new controller.
+php artisan make:migration [MigrationName]: Creates a new database migration.
+php artisan route:list: Lists all registered routes.
+php artisan serve: Starts the Laravel development server.
