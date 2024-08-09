@@ -1,0 +1,3 @@
+Vendor directory is a crucial part of the framework’s structure. It contains all the Composer dependencies required by your Laravel application. Composer is a dependency management tool for PHP that allows you to manage your project’s libraries and packages.
+
+Seeders are specialized classes that allow you to populate your database with sample or test data. This is particularly useful during development and testing, as it helps you quickly set up your database with predefined data.

@@ -9,31 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">My Application</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('students.index') }}">Students</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('teachers.index') }}">Teachers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('courses.index') }}">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('enrollments.index') }}">Enrollments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('payments.index') }}">Payments</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        @include('layouts.header')
     </header>
 
     <main class="container mt-4">
@@ -50,12 +26,10 @@
         </div>
     </main>
 
-    <footer class="bg-light py-4 mt-auto">
-        <div class="container text-center">
-            <p>&copy; {{ date('Y') }} My Application. All rights reserved.</p>
-        </div>
+    <footer>
+        @include('layouts.footer')
     </footer>
-
+    
     <!-- Include Bootstrap JS and dependencies -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
